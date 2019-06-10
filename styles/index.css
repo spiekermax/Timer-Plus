@@ -1,0 +1,19 @@
+html, body {
+    /* Position */
+    margin: 0px;
+    padding: 0px;
+
+    /* Size */
+    width: 100%;
+    height: 100%;
+
+    /* Appearance */
+    background-color: #1D1F21;
+}
+
+#timers
+{
+    /* Position */
+    position: relative;
+    top: 56px;
+}

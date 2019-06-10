@@ -1,0 +1,189 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.modalContainer {
+    /* Display */
+    display: none;
+
+    /* Position */
+    z-index: 3;
+    position: fixed;
+    left: calc(50% - 140px);
+
+    /* Size */
+    width: 280px;
+
+    /* Appearance */
+    background-color: #383838;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} .textModal
+{
+    top: calc(50% - 72px);
+} .timeModal
+{
+    top: calc(50% - 120px);
+}
+
+.modalHeader
+{
+    /* Position */
+    position: relative;
+    left: 15px;
+    /* Size */
+    height: 64px;
+    line-height: 64px;
+}
+.modalTitle
+{
+    /* Appearance */
+    color: white;
+    font-family: "Open Sans";
+    font-size: 21px;
+}
+
+.modalBody
+{
+    /* Position */
+    position: relative;
+    left: 15px;
+    /* Size */
+    width: calc(100% - 30px);
+} .modalBodyHeader
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} .modalBodyBody
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} .modalBodyFooter
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalDescription
+{
+    /* Appearance */
+    color: white;
+    font-family: "Open Sans Light";
+    font-size: 15px;
+}
+.modalTextInput
+{
+    position: relative;
+    left: 2%;
+    margin-top: 14px;
+    width: calc(96% - 35px);
+    background-color: #383838;
+    font-family: "Open Sans Light";
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 122, 255);
+    transition: all 250ms ease;
+} .modalTextInput:focus
+{
+    left: 0%;
+    width: calc(100% - 35px);
+}
+
+.modalArrowButton
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+} .modalArrowButton:not(:active)
+{
+    transition: background-color 1s linear;
+} .modalArrowButton:active
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.modalHours
+{
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 15px;
+    background-color: #383838;
+    border: none;
+    outline: none
+} .modalMinutes
+{
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 15px;
+    background-color: #383838;
+    border: none;
+    outline: none
+} .modalSeconds
+{
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 15px;
+    background-color: #383838;
+    border: none;
+    outline: none
+}
+
+.arrowUp
+{
+    background-image: url("../../resources/chevron-up-white.svg");
+}
+.arrowDown
+{
+    background-image: url("../../resources/chevron-down-white.svg");
+}
+
+.modalFooter
+{
+    /* Display */
+    display: flex;
+    /* Position */
+    align-items: center;
+    justify-content: flex-end;
+    /* Size */
+    height: 56px;
+}
+.modalButton
+{
+    /* Position */
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 8px;
+    /* Size */
+    min-width: 64px;
+    height: 36px;
+    /* Appearance */
+    color: rgb(0, 122, 255);
+    font-size: 15px;
+    font-family: "Open Sans";
+    background-color: transparent;
+    border: none;
+    border-radius: 5%;
+    outline: 1px solid transparent;
+} .modalButton:not(:active)
+{
+    transition: background-color 1s linear;
+} .modalButton:active
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}

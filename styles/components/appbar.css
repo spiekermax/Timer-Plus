@@ -1,0 +1,79 @@
+.appbarButton
+{
+    /* Position */
+    position: absolute;
+    padding: 12px;
+    top: calc(50% - 24px);
+
+    /* Size */
+    width: 48px;
+    height: 48px;
+
+    /* Appearance */
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 5%;
+    outline: none;
+} .appbarButton:not(:active)
+{
+    transition: background-color 1s linear;
+} .appbarButton:active
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#appbar
+{
+    /* Position */
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    
+    /* Size */
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+
+    /* Appearance */
+    user-select: none;
+    color: white;
+    font-family: "Open Sans Light";
+    font-size: 18px;
+    background-color: #252526;
+}
+
+#appTitle
+{
+    position: absolute;
+    left: 15px;
+}
+
+#addButton
+{
+    right: 108px;
+    /*right: 156px;*/
+    background-image: url("../../resources/plus-blue.svg");
+}
+
+#startAllButton
+{
+    right: 60px;
+    /*right: 108px;*/
+    background-image: url("../../resources/play-blue.svg");
+}
+
+#pauseAllButton
+{
+    right: 12px;
+    /*right: 60px;*/
+    background-image: url("../../resources/pause-blue.svg");
+}
+
+#settingsButton
+{
+    /*right: 12px;*/
+    background-image: url("../../resources/settings-blue.svg");
+}

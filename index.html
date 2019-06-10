@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Timer+</title>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="scripts/external/jquery/jquery-3.3.1.min.js"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/components/timer.css">
+  <link rel="stylesheet" href="styles/components/modal.css">
+  <link rel="stylesheet" href="styles/components/appbar.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body onload="onBrowserReady()">
+  <!-- Appbar -->
+  <div id="appbar">
+    <span id="appTitle">Timer+</span>
+    <button class="appbarButton" id="addButton"></button>
+    <button class="appbarButton" id="startAllButton"></button>
+    <button class="appbarButton" id="pauseAllButton"></button>
+    <!--button class="appbarButton" id="settingsButton"></button-->
+  </div>
+  <!-- Modals -->
+  <div id="modals"></div>
+  <!-- Timers -->
+  <div id="timers"></div>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="scripts/functions/utils.js"></script>
+  <script type="text/javascript" src="scripts/components/modal.js"></script>
+  <script type="text/javascript" src="scripts/components/timer.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+
+</html>
